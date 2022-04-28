@@ -81,12 +81,46 @@
             function showMessage() {
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
-                    title: "Lời nhắn", // Tiêu đề của popup
-                    text: "Gửi em, Phương Anh, cô gái tuổi 18, những lời chúc tốt đẹp nhất trong ngày em bước sang những trang trải nghiệm mới của cuộc đời.", // Nội dung lời nhắn
-                    button: {
-                        text: "❤️️",
-                    },      
-                });
+  title: "Lời nhắn",
+  text: "Chúc mừng sinh nhật em",
+  showCancelButton: false,
+  confirmButtonColor: '#3085d6',
+  confirmButtonText: 'Em cảm ơn nhaaa'
+}).then(
+function () 
+{
+    swal({
+    title: "Lời nhắn",
+	  text: "Anh thấy em dễ thương, hãy cho anh cơ hội được làm bạn em nhé",
+	  showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Em đồng ý',
+    cancelButtonText: 'Dạ, cái này thì em...',
+    buttonsStyling: false
+}).then(function () 
+{
+    swal({
+    title: "❤️❤️❤️",
+	text:"Cảm ơn em đã cho anh làm bạn em",
+	button: {
+        text: "❤️️",
+            }
+}), function (dismiss) 
+{
+  // dismiss can be 'cancel', 'overlay',
+  // 'close', and 'timer'
+  if (dismiss === 'cancel') {
+    swal({
+      title: "❤️❤️❤️",
+	text:"Cảm ơn em đã cho anh làm bạn em",
+	button: {
+        text: "❤️️",
+            },
+    });
+  }
+})
+);
             }
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
