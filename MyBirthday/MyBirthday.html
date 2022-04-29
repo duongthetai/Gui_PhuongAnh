@@ -83,44 +83,31 @@
                 swal({
   title: "Lời nhắn",
   text: "Chúc mừng sinh nhật em",
-  showCancelButton: false,
+  showCancelButton: true,
   confirmButtonColor: '#3085d6',
-  confirmButtonText: 'Em cảm ơn nhaaa'
+  confirmButtonText: 'Em đồngg yý ạạ ❤️',
+  cancelButtonText: 'Dạ, cái này thì...',
+  cancelButtonColor: '#d33'
 }).then(
 function () 
 {
-    swal({
-    title: "Lời nhắn",
-	  text: "Anh thấy em dễ thương, hãy cho anh cơ hội được làm bạn em nhé",
-	  showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'Em đồng ý',
-    cancelButtonText: 'Dạ, cái này thì em...',
-    buttonsStyling: false
-}).then(function () 
-{
-    swal({
-    title: "❤️❤️❤️",
-	text:"Cảm ơn em đã cho anh làm bạn em",
-	button: {
-        text: "❤️️",
-            }
-}), function (dismiss) 
+    swal(
+    '❤️❤️❤️',
+	'Cảm ơn em đã cho anh làm bạn em',
+	{button: "❤️",}
+	);
+}, function (dismiss) 
 {
   // dismiss can be 'cancel', 'overlay',
   // 'close', and 'timer'
   if (dismiss === 'cancel') {
-    swal({
-      title: "❤️❤️❤️",
-	text:"Cảm ơn em đã cho anh làm bạn em",
-	button: {
-        text: "❤️️",
-            },
-    });
+    swal(
+    '❤️❤️❤️',
+	'...đừng buông lời từ chối em ơii :3 ',
+	{button: "Em đồngg yý ạ❤️",}
+    );
   }
-})
-);
+});
             }
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
