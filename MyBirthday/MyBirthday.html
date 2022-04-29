@@ -15,7 +15,7 @@
         <link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
         <title>Happy Birthday</title>
         <link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.min.css">
+	<link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
         <script>
             window.open = function () {};
             window.print = function () {};
@@ -81,7 +81,7 @@
             }
             function showMessage() {
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
-                swal.fire({
+                swal({
   title: "Lời nhắn",
   text: "Chúc mừng sinh nhật em",
   showCancelButton: true,
@@ -95,7 +95,7 @@
 }).then(
 function () 
 {
-    swal.fire(
+    swal(
     '❤️❤️❤️',
 	'Cảm ơn em đã cho anh làm bạn em',
 	{button: "❤️",}
@@ -105,7 +105,7 @@ function ()
   // dismiss can be 'cancel', 'overlay',
   // 'close', and 'timer'
   if (dismiss === 'cancel') {
-    swal.fire(
+    swal(
     '❤️❤️❤️',
 	'...đừng buông lời từ chối em ơii :3 ',
 	{button: "Em đồngg yý ạ❤️",}
@@ -114,6 +114,6 @@ function ()
 });
             }
         </script>
-	    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.9/dist/sweetalert2.min.js"></script>      
+	    <script src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>     
     </body>
 </html>
