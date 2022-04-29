@@ -91,7 +91,7 @@
       cancelButtonColor: "#d33",
     })
     .then((result) => {
-      let confirmed = result.confirmed;
+      let confirmed = result.dismiss;
       if (confirmed) {
         swal.fire("titleyes", "text-yes", { button: "yes" });
       } else {
