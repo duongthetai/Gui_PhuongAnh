@@ -81,7 +81,7 @@
             }
             function showMessage() {
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
-                swal({
+                swal.fire({
   title: "Lời nhắn",
   text: "Chúc mừng sinh nhật em",
   showCancelButton: true,
@@ -95,7 +95,7 @@
 }).then(
 function () 
 {
-    swal(
+    swal.fire(
     '❤️❤️❤️',
 	'Cảm ơn em đã cho anh làm bạn em',
 	{button: "❤️",}
@@ -105,7 +105,7 @@ function ()
   // dismiss can be 'cancel', 'overlay',
   // 'close', and 'timer'
   if (dismiss === 'cancel') {
-    swal(
+    swal.fire(
     '❤️❤️❤️',
 	'...đừng buông lời từ chối em ơii :3 ',
 	{button: "Em đồngg yý ạ❤️",}
