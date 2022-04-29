@@ -66,7 +66,7 @@
                     <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
                     <img src="./pa_logi.jpg" alt="" class="avatar__img" onclick="showMessage()" />
                     <!-- 4. Tên của người đó -->
-                    <h1 onclick="showMessage()" class="avatar__title">Phương Anh</h1>
+                    <h1 onclick="showMessage()" class="avatar__title">Name</h1>
                 </div>
                 
                 <!-- 5. Phần nhạc -->
@@ -82,20 +82,20 @@
             function showMessage() {
                 // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
-  title: "Lời nhắn",
-  text: "Chúc mừng sinh nhật em",
+  title: "title",
+  text: "main text",
   showCancelButton: true,
   confirmButtonColor: '#3085d6',
-  confirmButtonText: 'Em đồngg yý ạạ ❤️',
-  cancelButtonText: 'Dạ, cái này thì...',
+  confirmButtonText: 'yes',
+  cancelButtonText: 'no',
   cancelButtonColor: '#d33'
 }).then(
 function () 
 {
     swal(
-    '❤️❤️❤️',
-	'Cảm ơn em đã cho anh làm bạn em',
-	{button: "❤️",}
+    'titleyes',
+	'text-yes',
+	{button: "yes",}
 	);
 }, function (dismiss) 
 {
@@ -103,9 +103,9 @@ function ()
   // 'close', and 'timer'
   if (dismiss === 'cancel') {
     swal(
-    '❤️❤️❤️',
-	'...đừng buông lời từ chối em ơii :3 ',
-	{button: "Em đồngg yý ạ❤️",}
+    'title _no',
+	'text no ',
+	{button: "no",}
     );
   }
 });
