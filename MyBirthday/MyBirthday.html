@@ -84,6 +84,8 @@
                   swal.fire({
       title: "title",
       text: "main text",
+      background: '#fff url("MyBirthday/main.jpg")',
+      color: '#716add',
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       confirmButtonText: "yes",
@@ -93,9 +95,9 @@
     .then((result) => {
       let confirmed = result.isConfirmed;
       if (confirmed) {
-        swal.fire("titleyes", "text-yes", { button: "yes" });
+        swal.fire("titleyes", "text-yes", { button: "yes" }, background: '#fff url("MyBirthday/yes.jpg")');
       } else {
-        swal.fire("titleno", "text-no", { button: "no" });
+        swal.fire("titleno", "text-no", { button: "no" },background: '#fff url("MyBirthday/no.jpg")',);
       }
     });
 		    
