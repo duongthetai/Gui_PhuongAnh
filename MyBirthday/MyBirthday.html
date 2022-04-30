@@ -91,7 +91,7 @@
       cancelButtonColor: "#d33",
     })
     .then((result) => {
-      let confirmed = result.dismiss;
+      let confirmed = result.isConfirmed;
       if (confirmed) {
         swal.fire("titleyes", "text-yes", { button: "yes" });
       } else {
@@ -102,6 +102,7 @@
 		    
             }
         </script>
+	    <script src="sweetalert2.all.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.10/sweetalert2.min.js" integrity="sha512-OgIASmUioEN3o3gYIAxYUeW4G5FWdhORLq0p7UhTM6Xrm5XGY4IrSDM3uYTCNh4ik4V8BX0NaX9/Z/VMqigCzg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     </body>
 </html>
