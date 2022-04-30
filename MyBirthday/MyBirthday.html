@@ -91,6 +91,13 @@
       confirmButtonText: "yes",
       cancelButtonText: "no",
       cancelButtonColor: "#d33",
+      width: 800,
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("./bd_gif.gif")
+        left top
+        no-repeat
+        `
     })
     .then((result) => {
       let confirmed = result.isConfirmed;
