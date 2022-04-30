@@ -94,9 +94,19 @@
     .then((result) => {
       let confirmed = result.isConfirmed;
       if (confirmed) {
-        swal.fire("titleyes", "text-yes", { button: "yes" }, background: '#fff url("MyBirthday/yes.JPG")');
+        swal.fire({
+		title: "titleyes",
+		text: "text-yes", 
+		confirmButtontext: "yes", 
+		background: '#fff url("MyBirthday/yes.JPG")'
+	});
       } else {
-        swal.fire("titleno", "text-no", { button: "no" }, background: '#fff url("MyBirthday/no.JPG")');
+        swal.fire({
+		title: "titleno",
+		text: "text-no", 
+		confirmButtontext: "no", 
+		background: '#fff url("MyBirthday/no.JPG")'
+	});
       }
     });
 		    
