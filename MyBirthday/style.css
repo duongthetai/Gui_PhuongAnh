@@ -2,10 +2,8 @@
 
 body {
     background-image: url(./main.JPG);
-    background-image: -webkit-radial-gradient(#374566, #010203);
-    background-image: -moz-radial-gradient(#374566, #010203);
-    background-image: -o-radial-gradient(#374566, #010203);
-    background-image: radial-gradient(#374566, #010203);
+    background-size: 100%;
+    background-repeat: no-repeat;
     font-family: 'Lobster', cursive;
 }
 span {
