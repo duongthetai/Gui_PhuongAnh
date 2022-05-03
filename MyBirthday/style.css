@@ -423,9 +423,7 @@ h1 {
     font-weight: 250;
     word-spacing: 5px;
 }
-.swal2-popup {
-    font-size: 100px !important;
-}
+
 
 /* Hiệu ứng pháo hoa*/
 .pyro > .before, .pyro > .after {
