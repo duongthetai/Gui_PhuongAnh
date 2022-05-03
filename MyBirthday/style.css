@@ -419,12 +419,12 @@ h1 {
 }
 
 .swal-text {
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 250;
     word-spacing: 5px;
 }
 .swal2-popup {
-    font-size: 200px !important;
+    font-size: 100px !important;
 }
 
 /* Hiệu ứng pháo hoa*/
