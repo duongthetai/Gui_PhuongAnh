@@ -423,7 +423,9 @@ h1 {
     font-weight: 250;
     word-spacing: 5px;
 }
-
+#swal-html-container {
+    font-size: 50px;
+}
 
 /* Hiệu ứng pháo hoa*/
 .pyro > .before, .pyro > .after {
