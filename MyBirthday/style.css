@@ -423,7 +423,7 @@ h1 {
     font-weight: 250;
     word-spacing: 5px;
 }
-#swal-html-container {
+.swal-html-container {
     font-size: 50px;
 }
 
