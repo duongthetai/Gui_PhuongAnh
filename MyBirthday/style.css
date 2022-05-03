@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+
 body {
     background-image: url(./main.JPG);
     background-size: 100%;
@@ -421,6 +422,9 @@ h1 {
     font-size: 100px;
     font-weight: 250;
     word-spacing: 5px;
+}
+.swal2-popup {
+    font-size: 5em !important;
 }
 
 /* Hiệu ứng pháo hoa*/
